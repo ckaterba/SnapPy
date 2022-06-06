@@ -922,7 +922,7 @@ material_params(RayHit ray_hit)
         int index = 4 * ray_hit.tet_num + ray_hit.object_index;
         int color_index = vertex_color_indices[index];
 
-        result.diffuse = hsv2rgb(vec3(float(color_index)/float(num_cusps), 0.25, 1.0));
+        result.diffuse = hsv2rgb(vec3(float(color_index)/float(num_cusps), 0.25, 0.9));
         result.ambient = 0.5 * result.diffuse;
     }        
 #else
